@@ -1,0 +1,260 @@
+body{
+    margin:auto;
+    background-color: black;
+}
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color: black;
+}
+
+h3{
+   color: goldenrod;
+   text-align: center;
+   font-size: xx-large;
+   padding-top: 180px;
+
+}
+
+hr{
+    
+    height: 0px;
+    border: none;
+    border-top: 3px solid black;
+
+
+   
+    
+    
+}
+
+
+
+
+
+
+
+
+.center{
+    display:block ;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 10px;
+   
+}
+
+ul{
+    margin:0;
+    padding-top: 10px;
+ }
+ 
+ 
+ li{
+    display: inline;
+    padding:0 5%;
+ }
+ 
+ 
+ a {
+    padding: .3em;
+    color: white;
+    text-decoration: none;
+ }
+ 
+ .cart {
+      position: absolute;
+      left: 30px;
+      top:56px;
+
+      color: #ffffff;
+ }
+ 
+ .bag{
+      position: absolute;
+      left:5px;
+      top:73px;
+      
+ }
+
+  
+
+   
+ 
+ 
+ .Azam{
+      position:absolute;
+      left: 570px;
+      top: 100px;
+      height: 70px;
+      width: 350px;
+
+ }
+ 
+
+ .logo2{
+      position:absolute;
+      padding-top: 13px;
+      
+ }
+ 
+ 
+ nav{
+    text-align: center;
+    border-bottom: 3px solid grey;
+    padding-top: 1px;
+ }
+ 
+ 
+ .index-nav a {
+    box-shadow: inset 0 0 0 0 goldenrod;
+    color: #ffffff;
+    margin: -0.28rem;
+    padding: 0 .28rem;
+    transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+    padding: 3px;
+ }
+ 
+ 
+ .index-nav a:hover{
+    box-shadow: inset 200px 0 0 0 goldenrod;
+  color: white;
+  padding: 3px;
+ }
+ 
+ 
+
+h1{
+   color:goldenrod;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: normal;
+   letter-spacing: 2px;
+}
+
+
+
+ 
+   
+p{
+   color:gray;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   text-align: center;
+}
+
+.sticky {
+   position: fixed;
+   top: 0;
+   width: 100%;
+ }
+
+ button{
+   background-color: goldenrod;
+   padding:8px;
+   text-align: center;
+   
+ }
+ 
+ 
+
+input{
+   font: size 5px;
+   
+}  
+
+
+.submit{
+   border-radius: 10px;
+   color: whitesmoke;
+   width: 340px;
+   height: 50px;
+   font-size: 15px;
+}
+
+.reset{
+   border-radius: 10px;
+   color: whitesmoke;
+   width: 340px;
+   height: 50px;
+   
+   
+   
+}
+
+
+.button1{
+   text-align: center;
+   padding-left: 0px;
+   padding-top: 2px;
+   margin-top: -860;
+   padding-right: 0px;
+   padding-bottom: 20px;
+   
+  
+   
+   
+}
+
+.button2{
+   text-align: center;
+   padding-left: 0px;
+   margin-top: -740;
+   padding-top: 0px;
+
+}
+
+input[type="text"]{
+   font-size: 30px;
+   text-align: left;
+   vertical-align: top;
+   border-radius: 10px;
+  
+   
+   
+}
+   
+input[type="tel"]{
+   font-size: 30px;
+   text-align: left;
+   border-radius: 10px;
+
+   
+}
+
+
+
+
+label{
+   margin-bottom: 30px;
+   display: block;
+}
+
+
+.message{
+   height: 50px;
+   text-align: left;
+  
+   
+   
+   
+}
+
+.exit{
+   padding-left: 698px;
+   padding-top: 100px;
+}
+
+.thank-you{
+   text-align: center;
+   padding-top: 180px;
+
+}
+
+.leave{
+   text-align: center;
+   padding-top: 40px;
+}
+
+.note{
+   padding-bottom: 380px;
+   text-align: center;
+}
