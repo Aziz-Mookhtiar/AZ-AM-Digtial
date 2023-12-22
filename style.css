@@ -121,7 +121,7 @@ ul{
     padding: 0 .28rem;
     transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
     padding: 3px;
-    font-size: 25px;
+    font-size: 30px;
  
  }
  
@@ -134,7 +134,7 @@ ul{
  
  li{
    color: white;
-   font-size: medium;
+   font-size: 15px;
  }
 
 h1{
