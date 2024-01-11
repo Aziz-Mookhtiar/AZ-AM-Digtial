@@ -146,40 +146,6 @@ ul{
   padding: 3px;
  }
 
- @media only screen and (max-width: 600px) {
-   .index-nav ul {
-       display: flex;
-       flex-direction: row;
-       justify-content: center;
-       align-items: center;
-       background-color: #5A5A5A; /* Match the background color of the desktop navbar */
-       position: fixed; /* Keep the fixed position for the mobile navbar */
-       top: 0;
-       left: 0;
-       width: 100%;
-   }
-
-   .index-nav li {
-       display: inline;
-       padding: 10px;
-   }
-
-   .index-nav a {
-       box-shadow: inset 0 0 0 0 goldenrod;
-       color: #ffffff;
-       margin: -0.28rem;
-       padding: 0 .28rem;
-       transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
-       padding: 3px;
-       font-size: 15px;
-   }
-
-   .index-nav a:hover{
-       box-shadow: inset 200px 0 0 0 goldenrod;
-       color: white;
-       padding: 3px;
-   }
-}
 
  
  
