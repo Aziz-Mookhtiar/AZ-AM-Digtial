@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AZAM Design</title>
+        <link href = "style.css" rel = "stylesheet" type="text/css">
+        <link rel="icon"type="image/x-icon" href="logoo.png">
+    </head>
+    <body>
+    <header>
+        <a href="index.html"><img class="logo2" src="logoo.png" alt="Azam digital" style="width: 42px;
+        height: 40px;"class="left"></a>
+
+        
+        
+            <nav class="index-nav"id="index-nav">
+                <ul id="menu">
+                    <li><a href ="D&M.html">  Marketing</a></li>
+                    <li><a href="P&D.html">Print</a></li>
+                    <li><a href="Sign.html">Signage </a></li>
+                    <li><a href="contact.html"> Contact </a></li>
+                    
+                    
+                </ul>
+            </nav>
+        </header>
+        <h1>Design</h1>
+        <p class="brief">Welcome to the Design and Website Building Hub at Az-Am Digital, where innovation meets aesthetics to shape your brand's digital identity. Our comprehensive services seamlessly blend captivating design with functional, user-centric websites. Dive into the world of possibilities we offer:</p>
+
+        <h3 class="about">Graphic Design</h3>
+        <p class="text">Unleash the power of visuals with our expert graphic design team. From compelling logos to visually striking marketing collateral, we breathe life into your brand through creative design solutions.</p>
+
+        <h3 class="about">Branding and Identity</h3>
+        <p class="text">Your brand is your story. Our branding and identity services ensure that every visual element aligns with your brand narrative, creating a memorable and cohesive brand identity across all touchpoints.</p>
+
+
+        <h3 class="about">Print and Digital Design</h3>
+        <p class="text">Seamlessly transition between physical and digital realms with our design expertise. From captivating print materials to engaging digital content, we create designs that captivate your audience in every context.</p>
+
+        <h3 class="about">UI/UX Design</h3>
+        <p class="text">Elevate user experiences with intuitive and visually appealing interfaces. Our UI/UX design team ensures that your website or app not only looks stunning but also provides a seamless and enjoyable user journey.</p>
+
+        <h3 class="about">Website Bulding and Development</h3>
+        <p class="text">Transform your online presence with our website building and development services. Our skilled developers craft responsive, user-friendly websites that not only showcase your brand but also convert visitors into customers.</p>
+
+
+        <h3 class="about">E-commerce Soloutions</h3>
+        <p class="text">Open your virtual storefront with our custom e-commerce solutions. We design and develop online stores that not only reflect your brand's identity but also provide a smooth and secure shopping experience for your customers.</p>
+
+
+        <h3 class="about">Customs Illustrations and Animations</h3>
+        <p class="text">Add a touch of uniqueness to your digital presence with custom illustrations and animations. Our artists bring your ideas to life, creating visuals that resonate with your audience and set your brand apart.
+        </p>
+
+
+        <a href="WD.html"><img class="upward" src="arrow.png" alt="image of upwards arrow" style="width:50px; height:50px;"</a>
+        <p>Back to the top</p>
+
+</body>
+</html>
+<script>
+    var navbar = document.getElementById("index-nav");
+    var menu = document.getElementById("menu");
+
+
+    window.onscroll = function(){
+        if(window.pageYOffset>= menu.offsetTop){
+            navbar.classList.add("sticky");
+        }
+        else{
+            navbar.classList.remove("sticky");
+        }
+
+
+    }
+
+</script>
