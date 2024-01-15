@@ -136,7 +136,7 @@ ul{
     transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
     padding: 3px;
     font-size: 15px;
-    border-radius: 10px;
+   
  
  }
  
@@ -145,7 +145,7 @@ ul{
    box-shadow: inset 200px 0 0 0 goldenrod;
   color: white;
   padding: 3px;
-  border-radius: 10px;
+  
  }
 
 
@@ -466,7 +466,7 @@ label{
    transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
    padding: 3px;
    font-size: 15px;
-   border-radius: 10px;
+   
  }
 
 
@@ -476,7 +476,7 @@ label{
    box-shadow: inset 200px 0 0 0 goldenrod;
    color: white;
    padding: 3px;
-   border-radius: 10px;
+  
  }
 
 
