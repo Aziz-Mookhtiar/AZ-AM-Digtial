@@ -135,7 +135,7 @@ ul{
     padding: 0 .28rem;
     transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
     padding: 3px;
-    font-size: 17px;
+    font-size: 15px;
     border-radius: 10px;
  
  }
@@ -465,7 +465,7 @@ label{
    padding: 0 .28rem;
    transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
    padding: 3px;
-   font-size: 17px;
+   font-size: 15px;
  }
  
  .index-nav.sticky a:hover {
