@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AZAM Print</title>
+        <link href = "style.css" rel = "stylesheet" type="text/css">
+        <link rel="icon"type="image/x-icon" href="logoo.png">
+    </head>
+    <body>
+    <header>
+        <a href="index.html"><img class="logo2" src="logoo.png" alt="Azam digital" style="width: 42px;
+        height: 40px;"class="left"></a>
+
+        
+        
+            <nav class="index-nav"id="index-nav">
+                <ul id="menu">
+                    <li><a href="D&M.html"> Marketing</a></li>
+                    <li><a href="WD.html"> Design</a></li>
+                    <li><a href="Sign.html">Signage </a></li>
+                    <li><a href="contact.html"> Contact </a></li>
+                    
+                    
+                </ul>
+            </nav>
+        </header>
+        <h1>Print</h1>
+        <p class="brief">At Az-Am Digital, we take pride in offering a diverse range of print media solutions designed to elevate your brand, captivate your audience, and leave a lasting impression. Explore the myriad ways we can bring your ideas to life across various print platforms</p>
+
+        <h3 class="about">Banners and Signage</h3>
+            <p class="text">Elevate your brand visibility with our bespoke banner printing services. Whether it's for a grand opening, an event, or to enhance your storefront, our banners are crafted to capture attention and leave a memorable impact.</p>
+         
+            
+            <div class="left">
+                <h3 class="about"> Window Decals</h3>
+                <p class="text">Transform your windows into captivating displays with our custom window decals. Communicate promotions, add a touch of creativity to your space, or simply enhance your brand visibility with eye-catching window graphics.</p>
+            </div>
+            
+            
+            <h3 class="about">Vehicle Branding with  Car Wraps:</h3>
+            <p class="text">Turn heads on the road with our vibrant and durable car wraps. Transform your vehicles into mobile billboards, ensuring your brand reaches new audiences wherever you go.</p>
+
+            <h3 class="about">Print Desing for Marketing Collateral</h3>
+            <p class="text">Elevate your brand with captivating print designs for marketing collateral. From business cards that make a lasting impression to brochures that tell your brand story, we ensure your prints are not just materials but experiences.</p>
+
+            <h3 class="about">Custom Packaging Solutions</h3>
+            <p class="text">Showcase your products in style with our custom packaging solutions. We design packaging that not only protects your products but also reflects the essence of your brand, creating an unforgettable unboxing experience.</p>
+
+            <h3 class="about">Event and Trade Show Materials</h3>
+            <p class="text">Make your mark at events and trade shows with our customized materials. From booth designs to promotional materials, we ensure your brand is front and center in any exhibition setting.</p>
+
+            <a href="P&D.html"><img class="upward" src="arrow.png" alt="image of upwards arrow" style="width:50px; height:50px;"</a>
+            <p>Back to the top</p>
+
+</body>
+</html>
+<script>
+    var navbar = document.getElementById("index-nav");
+    var menu = document.getElementById("menu");
+    
+    function toggleSticky() {
+       if (window.innerWidth > 600) {
+          if (window.pageYOffset >= menu.offsetTop) {
+             navbar.classList.add("sticky");
+          } else {
+             navbar.classList.remove("sticky");
+          }
+       } else {
+          navbar.classList.remove("sticky");
+       }
+    }
+    
+    window.onscroll = toggleSticky;
+    window.onresize = toggleSticky;
+    </script>
+
+            
+            
