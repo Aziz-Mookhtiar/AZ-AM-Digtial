@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+   <html>
+   <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>AZ-AM Contact Us</title>
+       <link href = "style.css" rel = "stylesheet" type="text/css">
+       <link rel="icon"type="image/x-icon" href="logoo.png">
+   </head>
+   <body>
+        <div id="loading-bar"></div>
+   <header>
+       <a href="index.html"><img class="logo2" src="logoo.png" alt="Azam digital" style="width: 53px;
+        height: 50px;" class="left"></a>
+
+
+      
+      
+           <nav class="index-nav"id="index-nav">
+               <ul id="menu">
+                <li><a href="D&M.html" onclick="navigateWithLoadingBar(this)">Marketing</a></li>
+                <li><a href="WD.html" onclick="navigateWithLoadingBar(this)">Design</a></li>
+                <li><a href="P&D.html" onclick="navigateWithLoadingBar(this)">Print</a></li>
+                <li><a href="Sign.html" onclick="navigateWithLoadingBar(this)">Signage</a></li>
+
+
+
+                 
+                  
+                  
+               </ul>
+           </nav>
+       </header>
+       <h1>Get a Qoute</h1>
+       <p class="bus">*Buisness Name Optional*</p>
+      
+      
+       <form onsubmit="showLoadingBar()" action="https://formsubmit.co/azamdigitalnz@gmail.com"method="POST">
+
+
+ 
+
+           <p>
+       
+               <input type="text" name="fullName" id="fullName" placeholder="Name" pattern="[A-Za-z ]+" title="Only alphabetical characters are allowed" autocomplete="on" required autofocus>
+           </p>
+         
+      
+          
+          <form action="https://formsubmit.co/azamdigitalnz@gmail.com"method="POST">
+                
+            <p>
+             
+          
+             
+               <input type="email"name="Emailadress"id="Emailadress"placeholder="Email"autocomplete="on"required autofocus>
+           
+   
+           </p>
+
+
+         
+          
+      
+           <p>
+              
+      
+               <input class="Buisness"type="text"name="Buisnessname"id="Buisnessname"placeholder="Buisness Name"autocomplete="on"  autofocus>
+              
+            
+           </p>
+          
+  
+        
+          <form action="https://formsubmit.co/azamdigitalnz@gmail.com"method="POST">
+                
+        <p>
+            <input type="tel" name="phone" id="phone" placeholder="Mobile Number"pattern="(\+61|0)4\d{8}|\+64\d{9}"title="Please use +61 or +64 at the start of your number" autocomplete="on" autofocus required>
+        </p>
+          
+          
+
+
+          <p>
+               <input class="message" type="text" class= "message" name="message"id="message"placeholder="Message" required>
+          </p>
+          <br>
+         
+          <p>
+               <input type="hidden"name="_subject"value="Client email inquiry recevied">
+           </p>
+
+
+           <p>
+               <input type="hidden" name="_captcha" value="false">
+           </p>
+
+
+           <p>
+               <input type="hidden" name="_next" value=" https://az-amdigital.com/Thank-you.html">
+           </p>
+
+
+         
+  
+
+
+
+
+            
+        <div class="button1">
+          <button class="submit" type="submit" formaction="https://formsubmit.co/azamdigitalnz@gmail.com" formmethod="POST"><b>Submit</b></button>
+       </div>
+
+
+
+
+
+
+       <div class="button2">
+           <button class="reset" type="Reset" onclick="resetForm()"><b>Reset</b></button>
+       </div>
+
+
+       <a class="phone" href="tel:0211811959">
+           <img class="con" src="contact.jpeg" title="image of a phone" alt="image of a phone">
+           <p>Or give us a call</p>
+       </a>
+       <a href="account.html"><img class="pffp"src="account.jpeg" alt="profile picture" style="width:60px; height:60px;"</a> <p class="fig">Make a Account with us Today !!! (BETA)</p>
+      
+   </body>
+   </html>
+   <script>
+     var navbar = document.getElementById("index-nav");
+    var menu = document.getElementById("menu");
+    
+    function toggleSticky() {
+       if (window.innerWidth > 600) {
+          if (window.pageYOffset >= menu.offsetTop) {
+             navbar.classList.add("sticky");
+          } else {
+             navbar.classList.remove("sticky");
+          }
+       } else {
+          navbar.classList.remove("sticky");
+       }
+    }
+    
+    window.onscroll = toggleSticky;
+    window.onresize = toggleSticky;
+
+
+
+
+
+      // Function to show loading bar
+      function showLoadingBar() {
+            var loadingBar = document.getElementById("loading-bar");
+            loadingBar.style.width = "100%";
+            setTimeout(function () {
+                loadingBar.style.width = "0";
+            }, 1000); // Adjust the timeout duration as needed
+        }
+
+
+            // Function to reset the form
+            function resetForm() {
+            showLoadingBar(); // Show the loading bar
+            setTimeout(function () {
+                document.getElementById("myForm").reset(); // Reset the form after a delay (adjust the duration as needed)
+            }, 1000); // Adjust the timeout duration to match the loading bar animation time
+        }
+
+        // Function to show loading bar
+     function showLoadingBar() {
+            var loadingBar = document.getElementById("loading-bar");
+            loadingBar.style.width = "100%";
+            setTimeout(function() {
+                loadingBar.style.width = "0";
+            }, 1000); // Adjust the timeout duration as needed
+        }
+
+
+        // Add click event listeners to navbar links
+        var navLinks = document.querySelectorAll("#menu a");
+        navLinks.forEach(function(link) {
+            link.addEventListener("click", function(event) {
+                event.preventDefault(); // Prevent default link behavior
+                showLoadingBar();
+                // Add any additional logic or actions when a link is clicked
+                setTimeout(function() {
+                    window.location.href = link.href; // Navigate to the link after loading bar animation
+                }, 1000); // Adjust the timeout duration as needed
+            });
+        });
+   </script>
