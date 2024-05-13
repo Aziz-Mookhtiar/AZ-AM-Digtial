@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AZ-AM Signs</title>
+        <link href = "style.css" rel = "stylesheet" type="text/css">
+        <link rel="icon"type="image/x-icon" href="logoo.png">
+    </head>
+    <body>
+        <div id="loading-bar"></div>
+    <header>
+        <a href="index.html"><img class="logo2" src="logoo.png" alt="Azam digital" style="width: 53px;
+            height: 50px;" class="left" id="log0"></a>
+
+        
+        
+            <nav class="index-nav"id="index-nav">
+                <ul id="menu">
+                    <li><a href ="D&M.html">  Marketing</a></li>
+                    <li><a href ="WD.html"> Design</a></li>
+                    <li><a href="P&D.html">Print</a></li>
+                    <li><a href="Gallery.html"> Gallery </a></li>
+                    
+                    
+                </ul>
+            </nav>
+        </header>
+        <body>
+        
+        
+        
+
+        <h1>Signs</h1>
+
+
+        <div class="image-row">
+            <img src="kid.png" alt="kid" title="kid">
+            <img src="van.jpeg" alt="kid" title="kid">
+            <img src="jutsu.jpeg" alt="kid" title="kid">
+        </div>
+    
+        <div class="image-row">
+            <img src="barber.kpeg.jpeg" alt="kid" title="kid">
+            <img src="wall.jpeg" alt="kid" title="kid">
+            <img src="hify.jpeg" alt="kid" title="kid">
+
+        </div>
+
+
+
+
+
+        <p class="brief">At Az-Am Digital, we specialize in creating impactful indoor and outdoor signage that goes beyond visibility – it's about making a lasting impression. Explore our comprehensive range of services, featuring company logos, rigid ACM boards and the timeless allure of neon lighting.</p>
+        <h3 class="about">Indoor Signage</h3>
+        <p class="text"> Illuminated Company Logos:
+
+            Bring your brand to life indoors with our illuminated company logos. Whether it's the reception area, boardroom, or retail space, our custom logo displays ensure your brand stands out with sophistication.</p>
+            
+            <p class="text"> Rigid ACM Boards:
+            
+            Elevate your indoor visuals with rigid ACM boards. Ideal for presentations, displays, or as statement pieces, our ACM boards are crafted with precision to showcase your brand identity with a polished finish.</p>
+            
+            <p class="text"> Neon-Lit Interior Signage:
+            
+            Transform your indoor space into a beacon of your brand with neon-lit interior signage. From welcoming entrance signs to captivating displays, we use the timeless allure of neon to create a visually immersive experience.</p>
+
+
+            <h3 class="about">Outdoor Signage</h3>
+            <p class="text"> Illuminated Building Logos:
+
+                Make a bold statement with illuminated building logos. Our outdoor displays ensure your brand is a standout presence, especially during the evening, creating a striking visual landmark.</p>
+                
+            <p class="text"> Rigid ACM Boards for Storefronts:
+                
+                Turn your storefront into a canvas with our rigid ACM boards. These durable displays not only showcase your brand but also withstand the outdoor elements, making a lasting impression on passersby.</p>
+                
+            <p class="text"> Neon-Lit Outdoor Signage:
+                
+            Illuminate your outdoor presence with the charm of neon. Our neon-lit outdoor signage, featuring your company name or tagline, adds a touch of sophistication and draws attention, day or night.</p>
+            <h3 class="about">Neon Lighting</h3>
+            <p class="text"> Custom Neon Logo Displays:
+
+                Showcase your brand with a touch of timeless elegance through custom neon logo displays. These bespoke creations add a captivating glow to your logo, ensuring it becomes a memorable focal point.
+
+            </p>
+
+
+            <p class="text"> Neon Accent Lighting:
+
+                Create ambiance and draw attention with neon accent lighting. Whether it's outlining architectural features or adding a touch of flair to your space, neon accent lighting adds a dynamic and eye-catching element.</p>
+
+            
+            <p class="text"> Neon Signage for Events:
+
+                Make your events unforgettable with neon signage. From trade shows to product launches, our neon creations add a vibrant and sophisticated touch to create a lasting impact.</p>
+
+
+            <a href="Sign.html"><img class="upward" src="arrow.png" alt="image of upwards arrow" style="width:50px; height:50px;" id="back-to-top"</a>
+            <p>Back to the top</p>
+</body>
+</html>
+<script>
+var navbar = document.getElementById("index-nav");
+var header = document.querySelector("header");
+var menu = document.getElementById("menu");
+
+function toggleSticky() {
+    if (window.innerWidth > 600) {
+        if (window.pageYOffset >= header.offsetHeight) {
+            navbar.classList.add("sticky");
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    } else {
+        navbar.classList.remove("sticky");
+    }
+}
+
+window.addEventListener('scroll', toggleSticky);
+window.addEventListener('resize', toggleSticky);
+
+// Call toggleSticky initially to ensure correct behavior on page load
+toggleSticky();
+
+
+
+    // Function to show loading bar
+    function showLoadingBar() {
+            var loadingBar = document.getElementById("loading-bar");
+            loadingBar.style.width = "100%";
+            setTimeout(function() {
+                loadingBar.style.width = "0";
+            }, 1000); // Adjust the timeout duration as needed
+        }
+
+
+        // Add click event listeners to navbar links
+        var navLinks = document.querySelectorAll("#menu a");
+        navLinks.forEach(function(link) {
+            link.addEventListener("click", function(event) {
+                event.preventDefault(); // Prevent default link behavior
+                showLoadingBar();
+                // Add any additional logic or actions when a link is clicked
+                setTimeout(function() {
+                    window.location.href = link.href; // Navigate to the link after loading bar animation
+                }, 1000); // Adjust the timeout duration as needed
+            });
+        });
+
+
+
+    document.getElementById('log0').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default link behavior
+    showLoadingBar();
+    setTimeout(function() {
+        window.location.href = "index.html"; // Change the href as per your requirement
+    }, 1000); // Adjust the timeout duration as needed
+});
+
+
+// Function to scroll smoothly to the top of the page
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+// Add click event listener to the "Back to the top" button
+document.getElementById('back-to-top').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default link behavior
+    scrollToTop();
+});
+
+
+</script>
