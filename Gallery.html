@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <title>AZ-AM Digital (Home) </title>
+        <link href = "style.css" rel = "stylesheet" type="text/css">
+        <link rel="icon"type="image/x-icon" href="logoo.png"style="width:32;height:32px;">
+
+    </head>
+    <body>
+        <div id="loading-bar"></div>
+        
+    <header>
+        <a href="index.html"><img class="logo22" src="logoo.png" alt="Azam digital" style="width: 53px;
+            height: 50px;"class="left" id="log0"></a>
+        
+            <nav class="index-nav"id="index-nav">
+                <ul id="menu"class="menu">
+                    <li><a href ="D&M.html">Marketing</a></li>
+                    <li><a href ="WD.html">Design</a></li>
+                    <li><a href="P&D.html">Print</a></li>
+                    <li><a href="Sign.html">Sign</a></li>
+                    <li class="desktop-only"><a href="contact.html"> Contact </a></li>
+                   
+                 
+                    
+                    
+                    
+                </ul>
+            </nav>
+        </header>
+
+
+       
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 7</div>
+              <img src="pink_ribbon.JPG" style="width:100%;">
+              <div class="caption"> PVC Banner </div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 7</div>
+              <img src="Jamea.JPG" style="width:100%;">
+              <div class="caption"> Rigid Foam Board  </div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 7</div>
+              <img src="Backdrop.JPG" style="width:100%;">
+              <div class="caption"> PVC Banner </div>
+            </div>
+
+
+
+              <div class="mySlides fade">
+                <div class="numbertext">4 / 7</div>
+                <img src="Tazeen_2.jpeg" style="width:100%; height: fit-content;">
+                <div class="caption"> PVC Banner </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 7</div>
+                <img src="Tazzen_3.jpeg" style="width:100%;">
+                <div class="caption"> PVC Banner </div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6/ 7</div>
+                <img src="tazeen_4.jpeg" style="width:100%;" >
+                <div class="caption"> PVC Banner </div>
+            </div>
+
+
+            
+            <div class="mySlides fade">
+                <div class="numbertext">7 / 7</div>
+                <img src="Backdrop.JPG" style="width:100%">
+                <div class="caption"> PVC Banner </div>
+            </div>
+
+
+
+
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+
+            <br>
+        
+        
+            <!-- Dots for navigation -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+
+
+            <div class="image-row">
+                <img src="telephone_booth.jpeg" alt="kid" title="kid">
+                <img src="Pink_ribbon_2.JPG" alt="kid" title="kid">
+                <img src="Tree.jpeg" alt="kid" title="kid">
+            </div>
+        
+            <div class="image-row">
+                <img src="Tazeeen.jpeg" alt="kid" title="kid">
+                <img src="image0.jpeg" alt="kid" title="kid">
+                <img src="image2.jpeg" alt="kid" title="kid">
+                
+
+    
+            </div>
+            
+
+
+
+
+
+
+            <a href="index.html"><img class="upward" src="arrow.png" alt="image of upwards arrow" style="width:50px; height:50px;" id="back-to-top"</a>
+            <p>Back to the top</p>
+            <a href="tel:0211811959"><img class ="phone" src="contact.jpeg" alt="image of phone" style="width: 50px; height:50px;"</a>
+            <p>Call us</p>
+            <p><a class="mobile" href="contact.html">Or Get A Qoute Here</a></p>
+           
+
+       
+    </body>
+</html>
+<script>
+    var navbar = document.getElementById("index-nav");
+    var menu = document.getElementById("menu");
+    
+    function toggleSticky() {
+       if (window.innerWidth > 600) {
+          if (window.pageYOffset >= menu.offsetTop) {
+             navbar.classList.add("sticky");
+          } else {
+             navbar.classList.remove("sticky");
+          }
+       } else {
+          navbar.classList.remove("sticky");
+       }
+    }
+    
+    window.onscroll = toggleSticky;
+    window.onresize = toggleSticky;
+
+
+     // Function to show loading bar
+     function showLoadingBar() {
+            var loadingBar = document.getElementById("loading-bar");
+            loadingBar.style.width = "100%";
+            setTimeout(function() {
+                loadingBar.style.width = "0";
+            }, 1000); // Adjust the timeout duration as needed
+        }
+
+
+        // Add click event listeners to navbar links
+        var navLinks = document.querySelectorAll("#menu a");
+        navLinks.forEach(function(link) {
+            link.addEventListener("click", function(event) {
+                event.preventDefault(); // Prevent default link behavior
+                showLoadingBar();
+                // Add any additional logic or actions when a link is clicked
+                setTimeout(function() {
+                    window.location.href = link.href; // Navigate to the link after loading bar animation
+                }, 1000); // Adjust the timeout duration as needed
+            });
+        });
+
+
+            // Add click event listeners to "Learn more" links
+    var learnMoreLinks = document.querySelectorAll(".print1 a");
+    learnMoreLinks.forEach(function (link) {
+        link.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent default link behavior
+            showLoadingBar();
+            // Add any additional logic or actions when a "Learn more" link is clicked
+            setTimeout(function () {
+                window.location.href = link.href; // Navigate to the link after loading bar animation
+            }, 1000); // Adjust the timeout duration as needed
+        });
+    });
+
+
+
+    document.getElementById('log0').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default link behavior
+    showLoadingBar();
+    setTimeout(function() {
+        window.location.href = "index.html"; // Change the href as per your requirement
+    }, 1000); // Adjust the timeout duration as needed
+});
+
+
+// Function to scroll smoothly to the top of the page
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+// Add click event listener to the "Back to the top" button
+document.getElementById('back-to-top').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default link behavior
+    scrollToTop();
+});
+
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+let slideInterval;
+
+// Function to start the slideshow
+function startSlideShow() {
+    slideInterval = setInterval(function() {
+        plusSlides(1); // Move to the next slide every 5 seconds
+    }, 5000);
+}
+
+// Function to pause the slideshow
+function pauseSlideShow() {
+    clearInterval(slideInterval);
+}
+
+// Function to show the specified slide
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+    pauseSlideShow(); // Pause the slideshow when manually navigating
+}
+
+// Function to show the slides
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+}
+
+// Function to move to the previous slide
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+// Start the slideshow initially
+startSlideShow();
+
+// Event listener for when the user interacts with the slideshow
+document.querySelectorAll(".slideshow-container").forEach(function(slideContainer) {
+    slideContainer.addEventListener("mouseenter", pauseSlideShow);
+    slideContainer.addEventListener("mouseleave", startSlideShow);
+    
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    slideContainer.addEventListener("touchstart", function(event) {
+        touchStartX = event.touches[0].clientX;
+        pauseSlideShow(); // Pause the slideshow when the user interacts via touch
+    });
+    
+    slideContainer.addEventListener("touchend", function(event) {
+        touchEndX = event.changedTouches[0].clientX;
+        handleSwipe();
+    });
+    
+    function handleSwipe() {
+        let swipeThreshold = 100; // Minimum swipe distance in pixels
+        
+        if (touchEndX < touchStartX - swipeThreshold) {
+            plusSlides(1); // Swipe left to move to the next slide
+        } else if (touchEndX > touchStartX + swipeThreshold) {
+            plusSlides(-1); // Swipe right to move to the previous slide
+        }
+        
+        startSlideShow(); // Start the slideshow again after swipe
+    }
+});
+
+// Event listeners for arrow key navigation
+document.addEventListener("keydown", function(event) {
+    if (event.key === "ArrowLeft") {
+        plusSlides(-1); // Move to the previous slide when left arrow key is pressed
+        pauseSlideShow(); // Pause the slideshow when the user interacts via keyboard
+    } else if (event.key === "ArrowRight") {
+        plusSlides(1); // Move to the next slide when right arrow key is pressed
+        pauseSlideShow(); // Pause the slideshow when the user interacts via keyboard
+    }
+});
+
+
+    </script>
+    
+
+
+
